@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.3 on darwin)" generated="20191203 21:55:06.586" rpa="false">
+<suite id="s1" name="Project" source="/Users/staceyfinch/PycharmProjects/robot_test/tests/project.robot">
+<test id="s1-t1" name="User can open home page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://boka.techbuddy.se/#/services</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20191203 21:55:06.778" level="INFO">Opening browser 'chrome' to base url 'https://boka.techbuddy.se/#/services'.</msg>
+<status status="PASS" starttime="20191203 21:55:06.778" endtime="20191203 21:55:11.948"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=div.tb-service-selector-item:first-child</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:11.950" endtime="20191203 21:55:11.983"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=div.tb-service-selector-item:first-child</arg>
+</arguments>
+<msg timestamp="20191203 21:55:11.984" level="INFO">Clicking element 'css=div.tb-service-selector-item:first-child'.</msg>
+<status status="PASS" starttime="20191203 21:55:11.983" endtime="20191203 21:55:12.067"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=div.tb-category-box:first-child</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:12.067" endtime="20191203 21:55:12.790"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=div.tb-category-box:first-child</arg>
+</arguments>
+<msg timestamp="20191203 21:55:12.790" level="INFO">Clicking element 'css=div.tb-category-box:first-child'.</msg>
+<status status="PASS" starttime="20191203 21:55:12.790" endtime="20191203 21:55:12.878"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=div.tb-dropdown-toggle.no-selection</arg>
+</arguments>
+<msg timestamp="20191203 21:55:12.879" level="INFO">Clicking element 'css=div.tb-dropdown-toggle.no-selection'.</msg>
+<status status="PASS" starttime="20191203 21:55:12.878" endtime="20191203 21:55:12.974"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=ul.tb-dropdown-menu&gt;li:first-child</arg>
+</arguments>
+<msg timestamp="20191203 21:55:12.975" level="INFO">Clicking element 'css=ul.tb-dropdown-menu&gt;li:first-child'.</msg>
+<status status="PASS" starttime="20191203 21:55:12.974" endtime="20191203 21:55:13.074"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>css=button.tb-button</arg>
+</arguments>
+<msg timestamp="20191203 21:55:13.075" level="INFO">Clicking button 'css=button.tb-button'.</msg>
+<status status="PASS" starttime="20191203 21:55:13.075" endtime="20191203 21:55:13.217"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id=input</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:13.219" endtime="20191203 21:55:13.919"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=input</arg>
+<arg>${mobile_number}</arg>
+</arguments>
+<msg timestamp="20191203 21:55:13.920" level="INFO">Typing text '46701234567' into text field 'id=input'.</msg>
+<status status="PASS" starttime="20191203 21:55:13.919" endtime="20191203 21:55:14.076"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css=button.tb-button</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:14.077" endtime="20191203 21:55:14.109"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>css=button.tb-button</arg>
+</arguments>
+<msg timestamp="20191203 21:55:14.110" level="INFO">Clicking button 'css=button.tb-button'.</msg>
+<status status="PASS" starttime="20191203 21:55:14.109" endtime="20191203 21:55:14.222"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=div.tb-input-container.noselect&gt;input</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:14.223" endtime="20191203 21:55:15.388"></status>
+</kw>
+<kw name="Input In Each Field" library="Resource">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>css=div.tb-input-container.noselect&gt;input</arg>
+</arguments>
+<assign>
+<var>${elements}</var>
+</assign>
+<msg timestamp="20191203 21:55:15.399" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="a2ccdf68-f3da-494a-8aa6-63402b52c009")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20191203 21:55:15.390" endtime="20191203 21:55:15.399"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<assign>
+<var>${element_count}</var>
+</assign>
+<msg timestamp="20191203 21:55:15.399" level="INFO">Length is 6</msg>
+<msg timestamp="20191203 21:55:15.399" level="INFO">${element_count} = 6</msg>
+<status status="PASS" starttime="20191203 21:55:15.399" endtime="20191203 21:55:15.399"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${sms_code}</arg>
+</arguments>
+<assign>
+<var>${digit_count}</var>
+</assign>
+<msg timestamp="20191203 21:55:15.400" level="INFO">Length is 6</msg>
+<msg timestamp="20191203 21:55:15.400" level="INFO">${digit_count} = 6</msg>
+<status status="PASS" starttime="20191203 21:55:15.400" endtime="20191203 21:55:15.400"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${elements}</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.400" level="INFO">[&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="a2ccdf68-f3da-494a-8aa6-63402b52c009")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="94abacf7-0b78-4f64-a37d-8f8f376fb842")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="fc10d143-8fe8-44c9-804b-c6e733b3b6ca")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="64b5b888-2c7b-4f4e-a9ca-f677d5970ef4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="f1c42fc9-7600-472a-ad0d-394a8acc19fa")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="f359d190-6ec2-4393-9592-ced5a9f6f42e")&gt;]</msg>
+<status status="PASS" starttime="20191203 21:55:15.400" endtime="20191203 21:55:15.400"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${element_count} == ${digit_count}</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:15.401" endtime="20191203 21:55:15.401"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | ${digit_count} ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.402" level="INFO">Typing text '1' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="a2ccdf68-f3da-494a-8aa6-63402b52c009")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.402" endtime="20191203 21:55:15.462"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.401" endtime="20191203 21:55:15.462"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.464" level="INFO">Typing text '0' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="94abacf7-0b78-4f64-a37d-8f8f376fb842")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.463" endtime="20191203 21:55:15.519"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.463" endtime="20191203 21:55:15.519"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.520" level="INFO">Typing text '0' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="fc10d143-8fe8-44c9-804b-c6e733b3b6ca")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.519" endtime="20191203 21:55:15.570"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.519" endtime="20191203 21:55:15.570"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.571" level="INFO">Typing text '1' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="64b5b888-2c7b-4f4e-a9ca-f677d5970ef4")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.570" endtime="20191203 21:55:15.623"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.570" endtime="20191203 21:55:15.623"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.624" level="INFO">Typing text '0' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="f1c42fc9-7600-472a-ad0d-394a8acc19fa")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.623" endtime="20191203 21:55:15.679"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.623" endtime="20191203 21:55:15.679"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${elements}[${i}]</arg>
+<arg>${sms_code}[${i}]</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.680" level="INFO">Typing text '0' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="17cb94fe7e375587c1ca71eaf0fc7e10", element="f359d190-6ec2-4393-9592-ced5a9f6f42e")&gt;'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.679" endtime="20191203 21:55:15.730"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.679" endtime="20191203 21:55:15.731"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.401" endtime="20191203 21:55:15.731"></status>
+</kw>
+<status status="PASS" starttime="20191203 21:55:15.389" endtime="20191203 21:55:15.731"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css=button.tb-button</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:15.732" endtime="20191203 21:55:15.763"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>css=button.tb-button</arg>
+</arguments>
+<msg timestamp="20191203 21:55:15.764" level="INFO">Clicking button 'css=button.tb-button'.</msg>
+<status status="PASS" starttime="20191203 21:55:15.763" endtime="20191203 21:55:15.880"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=div.tb-error-message</arg>
+<arg>timeout=3</arg>
+<arg>error=Validation error message is not displayed</arg>
+</arguments>
+<status status="PASS" starttime="20191203 21:55:15.880" endtime="20191203 21:55:16.378"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191203 21:55:16.379" endtime="20191203 21:55:16.521"></status>
+</kw>
+<doc>As a user I want to open the home page and see the tagline</doc>
+<status status="PASS" starttime="20191203 21:55:06.777" endtime="20191203 21:55:16.522" critical="yes"></status>
+</test>
+<doc>Demo project for Robot framework and Selenium</doc>
+<status status="PASS" starttime="20191203 21:55:06.589" endtime="20191203 21:55:16.527"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Project">Project</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
